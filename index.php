@@ -36,7 +36,8 @@ $pr="<p>lat,lon=[$lat °,$lon °]<br />temp,hum,press=[$temp °,$hum ％,$pres h
 
 <div id='map' style='width: 450px; height: 300px;'></div>
 <script>
-  mapboxgl.accessToken = 'pk.eyJ1Ijoia2F3YW1vNTUiLCJhIjoiY2p5YjFhemt2MDRrYTNubzEybjRsdjY4bSJ9.kEC67SGHkdUyOewYTINIUg';
+  // API Key
+  mapboxgl.accessToken = 'Your_apikey';
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
@@ -108,7 +109,7 @@ function goErupt() {
 <img src="image/earthq1.jpeg" width=50 height=50 onclick="goEarthq()">
 <img src="image/erupt01.png" width=50 height=50 onclick="goErupt()">
 <?php
-$api_key = "api_key=dxnVkKSN7rAUvcIsHlgnAD5KUMIOLc7ydh6M6Xnc";
+$api_key = "api_key=DEMO_KEY";
 if (isset($_GET['c'])) {
 echo '<br />';
 echo '<img src="https://api.nasa.gov/planetary/earth/imagery?lon=-102.00&lat=20.00&'
